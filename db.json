@@ -1,0 +1,141 @@
+{
+  
+  "case":{
+    "caseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "string",
+    "type": "string",
+    "status": "Open",
+    "documents": [
+      {
+        "documentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "caseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "name": "string",
+        "status": "Pending",
+        "uploadDate": "2024-02-08T15:47:17.281Z",
+        "tags": [
+          "string"
+        ]
+      }
+    ]
+  },
+
+  "cases":{
+    "cases": [
+      {
+        "caseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "name": "string",
+        "type": "string",
+        "status": "Open",
+        "documents": [
+          {
+            "documentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "caseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "name": "string",
+            "status": "Pending",
+            "uploadDate": "2024-02-08T15:48:14.367Z",
+            "tags": [
+              "string"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finalize-case":{
+    "caseId": "string",
+    "documents": [
+      {
+        "documentId": "string",
+        "tags": [
+          "string"
+        ]
+      }
+    ]
+  },
+  "overall-summary":{
+    "caseId": "string",
+    "summary": "string",
+    "gaugeIndicator": 1,
+    "currentFeedback": "Positive"
+  },
+
+  "customer-summary":{
+    "customerSummary": {
+      "caseId": "string",
+      "heading": "string",
+      "currentFeedback": "Positive",
+      "summaryText": "string"
+    }
+  },
+  "customer-summary-table":{
+    "caseId": "string",
+    "heading": "string",
+    "summaryText": "string",
+    "tableData": [
+      {
+        "confidenceLevel": "High",
+        "confidenceColour": "Green",
+        "middleSection": "string",
+        "summaryBlock": {
+          "caseId": "string",
+          "heading": "string",
+          "currentFeedback": "Positive",
+          "summaryText": "string"
+        }
+      }
+    ]
+  },
+  "internal-overview-summary":{
+    "customerSummary": {
+      "caseId": "string",
+      "heading": "string",
+      "currentFeedback": "Positive",
+      "summaryText": "string"
+    }
+  },
+  "internal-overview-summary-table":{
+    "caseId": "string",
+    "heading": "string",
+    "summaryText": "string",
+    "tableData": [
+      {
+        "confidenceLevel": "High",
+        "confidenceColour": "Green",
+        "middleSection": "string",
+        "summaryBlock": {
+          "caseId": "string",
+          "heading": "string",
+          "currentFeedback": "Positive",
+          "summaryText": "string"
+        }
+      }
+    ]
+  },
+  "external-overview-summary":{
+    "customerSummary": {
+      "caseId": "string",
+      "heading": "string",
+      "currentFeedback": "Positive",
+      "summaryText": "string"
+    }
+  },
+  "external-overview-summary-table":{
+    "caseId": "string",
+    "heading": "string",
+    "summaryText": "string",
+    "tableData": [
+      {
+        "confidenceLevel": "High",
+        "confidenceColour": "Green",
+        "middleSection": "string",
+        "summaryBlock": {
+          "caseId": "string",
+          "heading": "string",
+          "currentFeedback": "Positive",
+          "summaryText": "string"
+        }
+      }
+    ]
+  }
+
+}
