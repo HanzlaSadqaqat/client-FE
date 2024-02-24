@@ -158,7 +158,7 @@ const SearchRagPage = ({ casename, setcasename }) => {
   // const [openEditName, setopenEditName] = useState(second)
   return (
     <>
-      <div className="bg-gray-50 flex flex-col font-nunito items-center justify-start mx-auto w-full">
+      <div className="bg-gray-50 flex flex-col font-nunito items-center justify-start mx-auto w-full border-5">
         <div className="flex md:flex-col flex-row md:gap-5 items-start justify-evenly w-full">
           <Sidebar1 className="!sticky !w-24 bg-white-A700 border-gray-100 border-r-2 border-solid flex h-screen md:hidden justify-start overflow-auto md:px-5 top-[0]" />
           <div className="flex flex-1 flex-col items-center justify-start md:mt-0 mt-7 md:px-5 w-[90%]">
@@ -397,7 +397,7 @@ const SearchRagPage = ({ casename, setcasename }) => {
                                 {i?.caseReference?.references?.map((j, ind) => (
                                   <div
                                     className="common-pointer flex flex-row gap-2.5 items-center justify-start w-full"
-                                    // onClick={() => navigate("/searchrag")}
+                                  // onClick={() => navigate("/searchrag")}
                                   >
                                     <div className="h-3.5 relative w-[5%]">
                                       <div className="absolute bg-purple-600_19 bottom-[0] h-3 inset-x-[0] mx-auto rounded-[3px] w-3"></div>
@@ -430,9 +430,9 @@ const SearchRagPage = ({ casename, setcasename }) => {
                                               >
                                                 {j?.refDocName?.length > 15
                                                   ? j?.refDocName?.slice(
-                                                      0,
-                                                      15
-                                                    ) + "..."
+                                                    0,
+                                                    15
+                                                  ) + "..."
                                                   : j?.refDocName}
                                               </Text>
                                               <Text
@@ -558,7 +558,7 @@ const SearchRagPage = ({ casename, setcasename }) => {
             onUploadFinish={handleFinish}
             fakeUploading
             disableScroll
-            // url=''
+          // url=''
           >
             {files.map((file) => (
               <FileMosaic {...file} preview />

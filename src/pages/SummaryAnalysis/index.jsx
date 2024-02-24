@@ -660,7 +660,7 @@ const SummaryAnalysisPage = ({ casename, setcasename }) => {
                                   seteditname(false);
                                   handleAlert("success", "Updated Successful");
                                 }}
-                                // onClick={setcustomerDetail}
+                              // onClick={setcustomerDetail}
                               >
                                 Save
                               </button>
@@ -870,15 +870,15 @@ const SummaryAnalysisPage = ({ casename, setcasename }) => {
                               detailsection === 2
                                 ? apidata?.internalSummary?.internalSummary
                                 : detailsection === 3
-                                ? apidata?.externalSummary?.externalSummary
-                                : apidata?.customerSummary?.customerSummary
+                                  ? apidata?.externalSummary?.externalSummary
+                                  : apidata?.customerSummary?.customerSummary
                             }
                             table={
                               detailsection === 2
                                 ? apidata?.internalSummaryTable
                                 : detailsection === 3
-                                ? apidata?.externalSummaryTable
-                                : apidata?.customerSummaryTable
+                                  ? apidata?.externalSummaryTable
+                                  : apidata?.customerSummaryTable
                             }
                             id={detailsection}
                           />
@@ -889,15 +889,15 @@ const SummaryAnalysisPage = ({ casename, setcasename }) => {
                               detailsection === 2
                                 ? apidata?.internalSummary?.internalSummary
                                 : detailsection === 3
-                                ? apidata?.externalSummary?.externalSummary
-                                : apidata?.customerSummary?.customerSummary
+                                  ? apidata?.externalSummary?.externalSummary
+                                  : apidata?.customerSummary?.customerSummary
                             }
                             table={
                               detailsection === 2
                                 ? apidata?.internalSummaryTable
                                 : detailsection === 3
-                                ? apidata?.externalSummaryTable
-                                : apidata?.customerSummaryTable
+                                  ? apidata?.externalSummaryTable
+                                  : apidata?.customerSummaryTable
                             }
                             id={detailsection}
                           />
@@ -908,15 +908,15 @@ const SummaryAnalysisPage = ({ casename, setcasename }) => {
                               detailsection === 2
                                 ? apidata?.internalSummary?.internalSummary
                                 : detailsection === 3
-                                ? apidata?.externalSummary?.externalSummary
-                                : apidata?.customerSummary?.customerSummary
+                                  ? apidata?.externalSummary?.externalSummary
+                                  : apidata?.customerSummary?.customerSummary
                             }
                             table={
                               detailsection === 2
                                 ? apidata?.internalSummaryTable
                                 : detailsection === 3
-                                ? apidata?.externalSummaryTable
-                                : apidata?.customerSummaryTable
+                                  ? apidata?.externalSummaryTable
+                                  : apidata?.customerSummaryTable
                             }
                             id={detailsection}
                           />
@@ -960,7 +960,7 @@ const SummaryAnalysisPage = ({ casename, setcasename }) => {
             onUploadFinish={handleFinish}
             fakeUploading
             disableScroll
-            // url=''
+          // url=''
           >
             {files.map((file) => (
               <FileMosaic {...file} preview />

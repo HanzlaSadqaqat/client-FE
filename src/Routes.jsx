@@ -4,6 +4,7 @@ import NotFound from "pages/NotFound";
 import ReactLoading from "react-loading";
 import Cases from "pages/Cases";
 import Insurance from "pages/HealthInsurance";
+import ClaimSummary from "pages/ClaimSummary";
 
 const SummaryAnalysis = React.lazy(() => import("pages/SummaryAnalysis"));
 
@@ -30,6 +31,12 @@ const ProjectRoutes = () => {
       <Router>
         {/* <div className="absolute w-[500px] h-[500px] bg-slate-300 m-auto"></div> */}
         <Routes>
+          <Route
+            path="/claim"
+            element={
+              <ClaimSummary casename={casename} setcasename={setcasename} />
+            }
+          />
           <Route
             path="/searchrag"
             element={

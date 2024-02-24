@@ -3,9 +3,9 @@ import Bot from "../../assets/icons/Bot.png";
 import Sidebar1 from "../../components/Sidebar1/index";
 import React, { useState } from "react";
 import { Avatar, Card } from "antd";
-import CaseName from "./comp/CaseName";
-import { button, summary } from "./comp/data";
-import Summary from "../../components/Summary/Summary";
+import CaseButtons from "../../components/Underwriting/CaseButtons";
+import { button, searchButtons, summary, summaryButtons } from "./comp/data";
+import Summary from "../../components/Underwriting/Summary";
 import Dropdown from "./comp/Dropdown";
 
 export default function Insurance() {
@@ -33,17 +33,16 @@ export default function Insurance() {
           <Line className="bg-gray-100 h-0.5 mt-5 w-full" />
           <div className="h-full w-full p-10">
             <div>
-              <CaseName />
+              <CaseButtons buttons={active === 'Search' ? searchButtons : summaryButtons} />
             </div>
             <div className="flex gap-4">
               {btn.map((text, index) => (
                 <Button
                   onClick={(e) => setActive(text)}
-                  className={`  ${
-                    active === text
-                      ? "border-2 border-[#8703CA] font-bold text-gray-900_01"
-                      : ""
-                  } border-solid cursor-pointer font-semibold text-center text-sm w-38`}
+                  className={`  ${active === text
+                    ? "border-2 border-[#8703CA] font-bold text-gray-900_01"
+                    : ""
+                    } border-solid cursor-pointer font-semibold text-center text-sm w-38`}
                   shape="round"
                   color="gray_200_b2"
                   variant="fill"
