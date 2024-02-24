@@ -10,6 +10,7 @@ const variants = {
     blue_gray_50: "bg-blue_gray-50 text-gray-900",
     purple_600: "bg-purple-600 text-white-A700",
     purple_700: "bg-purple-700 text-white-A700",
+    purple_200: "bg-purple-200 text-purple-700",
     gray_200: "bg-gray-200",
   },
 };

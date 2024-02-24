@@ -609,7 +609,7 @@ const SummaryAnalysisPage = ({ casename, setcasename }) => {
               <div className="flex md:flex-col flex-row gap-5 justify-between mt-[18px] w-full">
                 <div className="flex md:flex-1 flex-col gap-[18px] items-center justify-start w-[24%] md:w-full">
                   <div className="border-2 border-gray-100 border-solid flex flex-col gap-5 items-center justify-start pb-[19px] rounded-[15px] w-full">
-                    <div className="bg-blue_gray-50 flex flex-col items-start justify-end p-[19px] rounded-tl-[15px] rounded-tr-[15px] w-full">
+                    <div className=" bg-blue_gray-50 flex flex-col items-start justify-end p-[19px] rounded-tl-[15px] rounded-tr-[15px] w-full">
                       <Text
                         className="md:ml-[0] ml-[5px] text-gray-900 text-sm"
                         size="txtNunitoSemiBold14Gray900"

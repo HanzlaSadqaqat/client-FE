@@ -1,13 +1,16 @@
 import { Bar, Button, Line } from "../../components";
 import Bot from "../../assets/icons/Bot.png";
 import Sidebar1 from "../../components/Sidebar1/index";
-import React from "react";
+import React, { useState } from "react";
 import { Avatar, Card } from "antd";
 import CaseName from "./comp/CaseName";
 import { button, summary } from "./comp/data";
-import Summary from "./comp/Summary";
+import Summary from "../../components/Summary/Summary";
+import Dropdown from "./comp/Dropdown";
 
 export default function Insurance() {
+  const [btn, setBtn] = useState(button.buttons);
+  const [active, setActive] = useState("Underwriting Content");
   return (
     <div>
       <div className="flex bg-gray-50 font-nunito">
@@ -32,21 +35,25 @@ export default function Insurance() {
             <div>
               <CaseName />
             </div>
-            <div className="flex gap-2">
-              {button.buttons.map((text, index) => (
+            <div className="flex gap-4">
+              {btn.map((text, index) => (
                 <Button
-                  children={text}
-                  className={`${
-                    button.active === index ? "border-[#8703CA] font-bold" : ""
-                  } border-1 text-[14px]`}
-                  color="gray_200"
-                  variant="fill"
+                  onClick={(e) => setActive(text)}
+                  className={`  ${
+                    active === text
+                      ? "border-2 border-[#8703CA] font-bold text-gray-900_01"
+                      : ""
+                  } border-solid cursor-pointer font-semibold text-center text-sm w-38`}
                   shape="round"
-                />
+                  color="gray_200_b2"
+                  variant="fill"
+                >
+                  {text}
+                </Button>
               ))}
             </div>
             <div className="w-full">
-              <Summary data={summary} />
+              <Summary data={summary} component="underwriting" />
             </div>
           </div>
         </div>

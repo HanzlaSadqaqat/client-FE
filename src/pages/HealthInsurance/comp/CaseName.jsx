@@ -1,48 +1,57 @@
 import { FaPlus } from "react-icons/fa";
 import { Button } from "../../../components/Button";
-import { TbRefresh } from "react-icons/tb";
+import { GoPlus } from "react-icons/go";
 import { AiOutlineFileDone } from "react-icons/ai";
 
 import React from "react";
+import { TbRefresh } from "react-icons/tb";
+import { RiEdit2Line } from "react-icons/ri";
 
 export default function CaseName() {
   return (
     <div>
-      <div className="flex justify-between">
-        <div className="text-[26px] font-semibold">Case Name</div>
-        <div className="flex gap-2">
+      <div className="flex justify-between pb-5">
+        <div className="text-[36px] font-bold flex gap-2 items-center">
+          Case Name <RiEdit2Line className="text-[24px]" />
+        </div>
+        <div className="flex gap-4">
           <Button
-            className="flex  gap-3 justify-center font-thin text-[12px]"
+            className="cursor-pointer flex items-center justify-center min-w-[91px] gap-2"
             shape="round"
-            color="gray_200"
-            children={"Customer File"}
-            leftIcon={<FaPlus />}
+            color="blue_gray_50"
+            size="md"
+            leftIcon={<GoPlus className=" mr-2 text-[24px]" />}
             variant="fill"
-          />
+          >
+            <div className="text-left text-sm">Customer File</div>
+          </Button>
           <Button
-            className="flex  gap-3 justify-center font-thin text-[12px]"
+            className="cursor-pointer flex items-center justify-center min-w-[91px] gap-2"
             shape="round"
-            color="gray_200"
-            children={"Company File"}
-            leftIcon={<FaPlus />}
+            color="blue_gray_50"
+            leftIcon={<GoPlus className=" mr-2 text-[24px]" />}
             variant="fill"
-          />
+          >
+            <div className="text-left text-sm">Company File</div>
+          </Button>
           <Button
-            className="flex  gap-3 justify-center font-thin text-[12px]"
+            className="cursor-pointer flex items-center justify-center min-w-[91px] gap-2"
             shape="round"
-            color="gray_200"
-            children={"Submit"}
-            leftIcon={<AiOutlineFileDone />}
+            color="blue_gray_50"
+            leftIcon={<AiOutlineFileDone className=" mr-2 text-[22px]" />}
             variant="fill"
-          />
+          >
+            <div className="text-left text-sm">Submit</div>
+          </Button>
           <Button
-            className="flex  gap-3 justify-center font-thin text-[12px]"
+            className="cursor-pointer flex items-center justify-center min-w-[133px]"
             shape="round"
             color="purple_600"
-            children={"Analyze"}
-            leftIcon={<TbRefresh />}
+            leftIcon={<TbRefresh className=" mr-3 text-[24px]" />}
             variant="fill"
-          />
+          >
+            <div className="text-left text-sm">Analyze</div>
+          </Button>
         </div>
       </div>
     </div>
