@@ -8,9 +8,10 @@ import GaugeChart from "react-gauge-chart";
 import { FiEdit3 } from "react-icons/fi";
 import { IoMdInformationCircleOutline, IoMdSend } from "react-icons/io";
 import Search from "antd/es/input/Search";
-import Dropdown from "../../pages/HealthInsurance/comp/Dropdown";
 import { handleAlert } from "utils";
 import { FaRegEdit } from "react-icons/fa";
+import HealthAnalysis from "../../pages/HealthInsurance/comp/DetailAnalysis";
+import ClaimAnalysis from "../../pages/ClaimSummary/comp/DetailAnalysis";
 
 
 const tabListNoTitle = [
@@ -418,7 +419,7 @@ export default function Summary(prop) {
                 className="ml-[7px] text-gray-900 text-sm"
                 size="txtNunitoSemiBold14Gray900"
               >
-                Smart Summarization
+                Detail Analysis
               </Text>
               <div>
                 <LuRefreshCcw />
@@ -426,7 +427,7 @@ export default function Summary(prop) {
             </div>
             <div className="flex md:flex-col flex-row gap-5 items-start justify-start w-full md:w-full">
               <div className="flex gap-3 items-start justify-start md:w-full pl-3 pr-3 w-full">
-                {prop.component === "underwriting" ? <Dropdown /> : <></>}
+                {prop.component === "health_analysis" ? <HealthAnalysis /> : prop.component === 'claim_analysis' ? <ClaimAnalysis /> : <></>}
               </div>
             </div>
           </div >

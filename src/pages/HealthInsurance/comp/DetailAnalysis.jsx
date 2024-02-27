@@ -7,7 +7,7 @@ import { CircularProgress } from "@nextui-org/react";
 import { Progress } from "antd";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
-export default function Dropdown() {
+export default function HealthAnalysis() {
   const [detailsection, setdetailsection] = useState(1);
 
   return (

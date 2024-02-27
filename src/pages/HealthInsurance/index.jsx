@@ -6,7 +6,7 @@ import { Avatar, Card } from "antd";
 import CaseButtons from "../../components/Underwriting/CaseButtons";
 import { button, searchButtons, summary, summaryButtons } from "./comp/data";
 import Summary from "../../components/Underwriting/Summary";
-import Dropdown from "./comp/Dropdown";
+import Dropdown from "./comp/DetailAnalysis";
 
 export default function Insurance() {
   const [btn, setBtn] = useState(button.buttons);
@@ -52,7 +52,7 @@ export default function Insurance() {
               ))}
             </div>
             <div className="w-full">
-              <Summary data={summary} component="underwriting" />
+              <Summary data={summary} component="health_analysis" />
             </div>
           </div>
         </div>

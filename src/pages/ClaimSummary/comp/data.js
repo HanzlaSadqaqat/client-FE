@@ -1,5 +1,6 @@
 import { AiOutlineFileDone } from "react-icons/ai";
 import { GoPlus } from "react-icons/go";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 export const button = {
   active: 0,
@@ -40,3 +41,89 @@ export const summary = {
   },
   add_comment: {},
 };
+
+
+export const claimSumaryDetail = {
+  event: 'Event goes here',
+  injury: 'Injury 1, Injury 2, Injury 3, Injury 4',
+  treatment: 'Treatment Goes Here',
+  placeOfTreatment: 'Place Of Treatment Goes Here',
+  hospitalName: 'Name Goes Here',
+  docSpecilization: 'Specialization Goes Here',
+  surgeryDetail: 'Details Go Here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+}
+
+export const claimSumaryExpense = {
+  surgeryExpense: '$4530',
+  hospitalExpense: '$894',
+  roomExpense: '$324',
+  otherExpense: '$23',
+  documentationExpense: '$345',
+  misellaneousExpense: '$235'
+}
+
+
+
+export const claimDoc = [
+  {
+    icon: <IoDocumentTextOutline />,
+    text: "Business Proposal",
+    select: true,
+    size: "176 KB",
+  },
+  {
+    icon: <IoDocumentTextOutline />,
+    text: "Financial Report FYI 2023",
+    select: false,
+    size: "176 KB",
+  },
+  {
+    icon: <IoDocumentTextOutline />,
+    text: "Layoff Policies",
+    select: true,
+    size: "176 KB",
+  },
+  {
+    icon: <IoDocumentTextOutline />,
+    text: "Legal Compliances",
+    select: false,
+    size: "176 KB",
+  },
+  {
+    icon: <IoDocumentTextOutline />,
+    text: "Sales Report For Last Quarter",
+    select: true,
+    size: "176 KB",
+  },
+  {
+    icon: <IoDocumentTextOutline />,
+    text: "Layoff Policies",
+    select: true,
+    size: "176 KB",
+  },
+  {
+    icon: <IoDocumentTextOutline />,
+    text: "Financial Report FYI 2023",
+    select: false,
+    size: "176 KB",
+  },
+];
+
+
+export const payableDummy = {
+  roomExpense: { value: '$784', select: false },
+  surgeryExpense: { value: '$784', select: false },
+  medicinalExpense: { value: '$784', select: false },
+  documentationExpense: { value: '$784', select: false },
+  misellaneousExpense: { value: '$784', select: false },
+}
+export const paidDummy = {
+  roomExpense: { value: '$704', select: false },
+  surgeryExpense: { value: '$734', select: false },
+  medicinalExpense: { value: '$724', select: false },
+  documentationExpense: { value: '$584', select: false },
+  misellaneousExpense: { value: '$734', select: false },
+}
+
+
+
