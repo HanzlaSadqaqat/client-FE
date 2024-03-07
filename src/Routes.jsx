@@ -5,6 +5,8 @@ import ReactLoading from "react-loading";
 import Cases from "pages/Cases";
 import Insurance from "pages/HealthInsurance";
 import ClaimSummary from "pages/ClaimSummary";
+import LoginPage from "pages/Login";
+import Signup from "pages/Signup";
 
 const SummaryAnalysis = React.lazy(() => import("pages/SummaryAnalysis"));
 
@@ -32,7 +34,17 @@ const ProjectRoutes = () => {
         {/* <div className="absolute w-[500px] h-[500px] bg-slate-300 m-auto"></div> */}
         <Routes>
           <Route
-            path="/claim"
+            path="/login"
+            element={
+              <LoginPage casename={casename} setcasename={setcasename} />
+            }
+          />
+          <Route
+            path="/signup"
+            element={<Signup casename={casename} setcasename={setcasename} />}
+          />
+          <Route
+            path="/login"
             element={
               <ClaimSummary casename={casename} setcasename={setcasename} />
             }
